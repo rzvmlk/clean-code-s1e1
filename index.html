@@ -9,54 +9,55 @@
           media="screen">
 </head>
 <body class="page">
-    <aside class="todo-description">
-        <img src="./eisenhower-matrix.jpg" alt="img-description">
-        <a class="more-details" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <aside class="todo-description description">
+        <img class="description__img" src="./eisenhower-matrix.jpg" alt="img-description">
+        <a class="description__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </aside>
-    <main class="main-content">
-        <section class="add-element">
-            <label for="new-task">Add Item</label>
-            <div class="task-row-wrapper">
-                <input id="new-task"
-                       class="task" 
+    <main class="main-content todolist">
+        <section class="todolist__add-element">
+            <label for="todolist__add-element_label" for="new_task">Add Item</label>
+            <div class="todolist__add-element_wrapper">
+                <input id="new_task"
+                       class="todolist__input_task" 
                        type="text">
-                <button>Add</button>
+                <button class="btn btn_add">Add</button>
             </div>
         </section>
-        <section class="task__incomplete">
-            <h3>Todo</h3>
-            <ul id="incomplete-tasks">
-                <li>
-                    <input type="checkbox">
-                    <label class="task">Pay Bills</label>
-                    <input type="text" class="task">
-                    <button class="edit">Edit</button>
-                    <button class="delete">
-                        <img src="./remove.svg">
+        <section class="task__incomplete incmpl">
+            <h3 class="incmpl__title title">Todo</h3>
+            <ul id="incmpl__list list">
+                <li class="list__el">
+                    <input class="list__input_checkbox" type="checkbox">
+                    <label class="list__label">Pay Bills</label>
+                    <input type="text" class="list__input_text">
+                    <button class="btn btn_edit">Edit</button>
+                    <button class="btn btn_remove">
+                        <img src="./remove.svg" class="btn__img_remove">
                     </button>
                 </li>
-                <li class="edit-mode">
-                    <input type="checkbox">
-                    <label class="task">Go Shopping</label>
+                <li class="list__el list__el_edit-mode">
+                    <input class="list__input_checkbox" type="checkbox">
+                    <label class="list__label">Go Shopping</label>
                     <input type="text" 
                            value="Go Shopping" 
-                           class="task">
-                    <button class="edit">Save</button>
-                    <button class="delete">
-                        <img src="./remove.svg">
+                           class="list__input_text">
+                    <button class="btn btn_edit">Save</button>
+                    <button class="btn btn_remove">
+                        <img class="btn__img_remove" src="./remove.svg">
                     </button>
                 </li>
             </ul>
         </section>
-        <section class="task__complete">
-            <ul id="completed-tasks">
-                <li>
-                    <input type="checkbox" checked>
-                    <label class="task">See the Doctor</label>
-                    <input type="text" class="task">
-                    <button class="edit">Edit</button>
-                    <button class="delete">
-                        <img src="./remove.svg" alt="img-remove">
+        <section class="task__complete complt">
+            <h3 class="complt__title title">Completed</h3>
+            <ul id="complt__list list">
+                <li class="list__el">
+                    <input type="checkbox" class="list__input_checkbox" checked>
+                    <label class="list__label">See the Doctor</label>
+                    <input type="text" class="list__input_text">
+                    <button class="btn btn_edit">Edit</button>
+                    <button class="btn btn_delete">
+                        <img src="./remove.svg" alt="img-remove" class="btn__img_remove">
                     </button>
                 </li>
             </ul>
